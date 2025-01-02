@@ -1,4 +1,5 @@
 import React from "react";
+import image from "../assets/admission.png";
 
 const Navbar = () => {
   return (
@@ -26,51 +27,48 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
+              <a>Home</a>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <a>About us</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Contact</a>
+            </li>
+            <li>
+              <a>Previous Travel Images</a>
+            </li>
+            <li>
+              <a>Conditions</a>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <div className="flex gap-6">
+          <img src={image} alt="Logo" />
+          <button>Facebook</button>
+        </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
-      </div>
+
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu text-base font-medium menu-horizontal px-1">
+            <li>
+              <a>Home</a>
+            </li>
+            <li>
+              <a>About us</a>
+            </li>
+            <li>
+              <a>Contact</a>
+            </li>
+            <li>
+              <a>Previous Travel Images</a>
+            </li>
+            <li>
+              <a>Conditions</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
