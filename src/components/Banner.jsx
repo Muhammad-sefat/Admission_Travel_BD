@@ -1,5 +1,7 @@
 import React from "react";
 import banner from "../assets/admission-banner.png";
+import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Banner = () => {
   return (
@@ -25,7 +27,11 @@ const Banner = () => {
             University, Chittagong University, Jahangirnagar University, CUET,
             KUET, RUET, Krishi Guccho and many more universities.
           </p>
-          <button className="btn btn-primary">More About Us</button>
+          <button className="btn btn-primary">
+            {" "}
+            <FontAwesomeIcon icon={faAddressCard} />
+            More About Us
+          </button>
         </div>
       </div>
     </div>

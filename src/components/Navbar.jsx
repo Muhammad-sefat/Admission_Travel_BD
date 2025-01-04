@@ -1,5 +1,7 @@
 import React from "react";
 import image from "../assets/admission.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   return (
@@ -45,7 +47,11 @@ const Navbar = () => {
         </div>
         <div className="flex gap-6">
           <img src={image} alt="Logo" />
-          <button>Facebook</button>
+          <button className="flex items-center gap-2 text-xl">
+            {" "}
+            <FontAwesomeIcon icon={faSquareFacebook} />
+            Facebook
+          </button>
         </div>
       </div>
 
