@@ -1,5 +1,7 @@
 import "./App.css";
 import Banner from "./components/Banner";
+import BookingAds from "./components/BookingAds";
+import Footer from "./components/Footer";
 import Navbar from "./components/navbar";
 
 function App() {
@@ -7,6 +9,8 @@ function App() {
     <>
       <Navbar />
       <Banner />
+      <BookingAds />
+      <Footer />
     </>
   );
 }
