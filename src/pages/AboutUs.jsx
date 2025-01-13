@@ -1,7 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import image from "../assets/contact.png";
 
 const AboutUs = () => {
+  const [serviceUsers, setServiceUsers] = useState(0);
+  const [successfulTrips, setSuccessfulTrips] = useState(0);
+  const [accidents, setAccidents] = useState(0);
+
+  useEffect(() => {
+    const serviceInterval = setInterval(() => {
+      setServiceUsers((prev) => {
+        if (prev >= 7000) {
+          clearInterval(serviceInterval);
+          return 7000;
+        }
+        return prev + 50;
+      });
+    }, 30);
+
+    const tripInterval = setInterval(() => {
+      setSuccessfulTrips((prev) => {
+        if (prev >= 500) {
+          clearInterval(tripInterval);
+          return 500;
+        }
+        return prev + 5;
+      });
+    }, 50);
+
+    const accidentInterval = setInterval(() => {
+      setAccidents((prev) => {
+        if (prev >= 0) {
+          clearInterval(accidentInterval);
+          return 0;
+        }
+        return prev;
+      });
+    }, 100);
+
+    return () => {
+      clearInterval(serviceInterval);
+      clearInterval(tripInterval);
+      clearInterval(accidentInterval);
+    };
+  }, []);
   return (
     <div>
       <div className="bg-[#e7f8d9] h-[40vh] mb-8 rounded flex justify-center items-center text-4xl font-semibold">
@@ -43,15 +84,17 @@ const AboutUs = () => {
           পর্যন্ত...
         </div>
         <div>
-          <p className="text-5xl font-bold mb-2">7,000 +</p>
+          <p className="text-5xl font-bold mb-2">
+            {serviceUsers.toLocaleString()}+
+          </p>
           <p className="text-xl font-semibold">সেবা গ্রহীতা</p>
         </div>
         <div>
-          <p className="text-5xl font-bold mb-2">500 +</p>
+          <p className="text-5xl font-bold mb-2">{successfulTrips}+</p>
           <p className="text-xl font-semibold">সফল ট্রিপ</p>
         </div>
         <div>
-          <p className="text-5xl font-bold mb-2">0</p>
+          <p className="text-5xl font-bold mb-2">{accidents}</p>
           <p className="text-xl font-semibold">দূর্ঘটনা</p>
         </div>
       </div>
