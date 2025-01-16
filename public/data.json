@@ -22,5 +22,61 @@
     "busType": "Non AC",
     "journeyDate": "12-jan-25",
     "examDate": "13-jan-25"
+  },
+  {
+    "from": "Dhaka",
+    "to": "BUET",
+    "unit": "All",
+    "busType": "AC",
+    "journeyDate": "15-jan-25",
+    "examDate": "16-jan-25"
+  },
+  {
+    "from": "Chittagong",
+    "to": "KUET",
+    "unit": "Economy",
+    "busType": "Non AC",
+    "journeyDate": "17-jan-25",
+    "examDate": "18-jan-25"
+  },
+  {
+    "from": "Sylhet",
+    "to": "Dhaka",
+    "unit": "Premium",
+    "busType": "AC",
+    "journeyDate": "19-jan-25",
+    "examDate": "20-jan-25"
+  },
+  {
+    "from": "Dhaka",
+    "to": "Chittagong",
+    "unit": "Economy",
+    "busType": "AC",
+    "journeyDate": "21-jan-25",
+    "examDate": "22-jan-25"
+  },
+  {
+    "from": "Barisal",
+    "to": "KUET",
+    "unit": "All",
+    "busType": "Non AC",
+    "journeyDate": "23-jan-25",
+    "examDate": "24-jan-25"
+  },
+  {
+    "from": "Rajshahi",
+    "to": "Dhaka",
+    "unit": "Premium",
+    "busType": "AC",
+    "journeyDate": "25-jan-25",
+    "examDate": "26-jan-25"
+  },
+  {
+    "from": "Khulna",
+    "to": "KUET",
+    "unit": "All",
+    "busType": "Non AC",
+    "journeyDate": "27-jan-25",
+    "examDate": "28-jan-25"
   }
 ]
