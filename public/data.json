@@ -1,0 +1,26 @@
+[
+  {
+    "from": "Dhaka",
+    "to": "KUET",
+    "unit": "All",
+    "busType": "Non AC",
+    "journeyDate": "10-jan-25",
+    "examDate": "11-jan-25"
+  },
+  {
+    "from": "Comilla",
+    "to": "KUET",
+    "unit": "All",
+    "busType": "Non AC",
+    "journeyDate": "10-jan-25",
+    "examDate": "11-jan-25"
+  },
+  {
+    "from": "Comilla",
+    "to": "BUET",
+    "unit": "All",
+    "busType": "Non AC",
+    "journeyDate": "12-jan-25",
+    "examDate": "13-jan-25"
+  }
+]
